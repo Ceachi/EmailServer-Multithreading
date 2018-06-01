@@ -50,7 +50,7 @@ public class MessagesHistory {
 
     @Override
     public String toString() {
-        return "MessagesHistory{" + "messageId=" + messageId + ", senderEmail=" + senderEmail + ", message=" + message + '}' + "user = " + users;
+        return "MessagesHistory{" + "messageId=" + messageId + ", senderEmail=" + senderEmail + ", message=" + message + '}' + "user = " + users ;
     }
 
 

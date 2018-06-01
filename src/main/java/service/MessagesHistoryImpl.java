@@ -51,8 +51,20 @@ public class MessagesHistoryImpl implements MessagesDaoInterface<MessagesHistory
         session.getTransaction().commit();
         session.close();
         return (MessagesHistory) marksQuery2;
-
     }
+
+//    @Override
+//    public List<MessagesHistory> getAllMessages(Id users_id) {
+//         SessionFactory sessionFactory = HibernateUtility.getSessionFactory();
+//        session = sessionFactory.openSession();
+//        session.beginTransaction();
+//        
+//        
+//          query = session.createQuery("from MessagesHistory where messageId=:b");
+//           query.setParameter("b", id);
+//           
+//          
+//    }
 
     @Override
     public void update(MessagesHistory entity) {
@@ -79,7 +91,7 @@ public class MessagesHistoryImpl implements MessagesDaoInterface<MessagesHistory
         session.beginTransaction();
 
         System.out.println("");
-        session.save( message);
+        session.save(message);
 
         session.getTransaction().commit();
         session.close();

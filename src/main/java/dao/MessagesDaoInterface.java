@@ -18,4 +18,6 @@ public interface MessagesDaoInterface<T> {
     public void update(T entity);
     public void insertMessages(List<T> messages);
     public void insert(T message);
+    
+   // public List<T> getAllMessages(Id users_id);
 }
